@@ -1,3 +1,4 @@
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 # golang-mariadb-web-starter
 Starterkit for a Golang Web-Server with Connection to MariaDB (MySQL Engine) and a REST-API 
 
