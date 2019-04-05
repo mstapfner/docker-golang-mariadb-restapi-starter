@@ -9,6 +9,7 @@ It uses the following technologies:
 * Golang application that connects to the database
 * GORM (Object-Relational-Mapper) for storing and retrieving data from database
 * Gorilla Mux as a HTTP-Framework for serving the REST API
+* Govendor as a vendoring tool
 
 To simply start the application, use: `sudo sh startup.sh`. 
 This script includes the Docker and Docker-compose instalaltion for Ubuntu. 
