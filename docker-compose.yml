@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  go-db-starter:
+    image: golang:alpine
+    container_name: go-db-starter
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - .:/go/src/go-db-starter
+    working_dir: /go/src/go-db-starter
+    expose:
+      - 80
+    command: sh -c "go run *.go"
+    ports:
+      - 80:80
+  db:
+    image: mariadb
+    container_name: db
+    environment:
+      - MYSQL_ROOT_PASSWORD=g240iowejgadvsijfgwrgafd
+      - MYSQL_DATABASE=golangstarter
+      - MYSQL_USER=dbuser
+      - MYSQL_PASSWORD=v4wedsavhoqwd
+    volumes:
+      - ./database:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

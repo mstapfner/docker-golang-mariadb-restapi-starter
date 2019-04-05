@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "e2077ff9-7d6b-4af8-b7d3-b2f5b4497986",
+		"name": "Golang-MariaDB-Web Starter",
+		"description": "Working Requests for the starter kit ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:80/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Returns all users in database"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"test.user@gmail.com\",\n\t\"username\": \"testuser\",\n\t\"password\": \"Test1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:80/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Creates a new user in the database with a unique e-mail address"
+			},
+			"response": []
+		}
+	]
+}
