@@ -1,5 +1,5 @@
 ![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-# golang-mariadb-web-starter
+# Docker-Compose - Golang-Mariadb-Web-Starterkit
 Starterkit for a Golang Web-Server with Connection to MariaDB (MySQL Engine) and a REST-API 
 
 Docker-Compose based Setup including installation and startup script
