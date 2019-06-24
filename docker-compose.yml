@@ -28,8 +28,3 @@ services:
       - ./database:/var/lib/mysql
     ports:
       - 3306:3306
-
-networks:
-  default:
-    external:
-      name: nginx-proxy
